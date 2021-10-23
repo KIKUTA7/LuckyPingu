@@ -99,17 +99,19 @@ public class LuckyPenguin extends MiniJava {
 
 		}
         int WinningNum = pingu[0];
+        int last = 0;
         for (int i=0; i < num; i++)
 		{
-			if (pingu[i] > WinningNum) {WinningNum = pingu[i];}
+			if (pingu[i] > WinningNum) {WinningNum = pingu[i]; }
+			else if(pingu[i] == WinningNum) {last = i;}
 		}
-        int WinnerNum = 0;
         write("The winning penguins with "+WinningNum+" fish:");
-		for (int i=0; i<num ; i++)
+        for (int i=0; i<num ; i++)
 		{
 			if(pingu[i] == WinningNum)
 			{
-				write("Penguin "+i);
+				if(i == last) {writeConsole("Penguin "+i);}
+				else {write("Penguin "+i);}
 			}
 		}
 
