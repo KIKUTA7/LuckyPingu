@@ -15,9 +15,9 @@ import java.util.Random;
  */
 public class MiniJava {
 
-	public static Random rand;
-	public static InputStream is = System.in;
-	public static BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(is));
+	private static Random rand;
+	private static InputStream is = System.in;
+	private static BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(is));
 
 	/**
 	 * Task-specific method for W03H01:
