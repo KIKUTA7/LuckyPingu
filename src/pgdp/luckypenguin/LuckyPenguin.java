@@ -40,6 +40,7 @@ public class LuckyPenguin extends MiniJava {
 					pingu[k] += fish[i];
 				}
 				t = true;
+				continue;
 			}
 			fir = dice();
 			sec = dice();
@@ -108,7 +109,7 @@ public class LuckyPenguin extends MiniJava {
 		{
 			if(pingu[i] == WinningNum)
 			{
-				write("Penguin "+(i+1));
+				write("Penguin "+i);
 			}
 		}
 
