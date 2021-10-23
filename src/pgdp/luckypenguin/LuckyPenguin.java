@@ -26,7 +26,7 @@ public class LuckyPenguin extends MiniJava {
 			if (checkpingu[k] == 1) {k++;continue;}
 			int sum = 0;
 			writeBoard(fish[1],fish[2],fish[3],fish[4],fish[5],fish[6],fish[7],fish[8],fish[9]);
-			write("It's penguin "+k+"'s turn:");
+			System.out.println("It's penguin "+k+"'s turn:");
 			int stop = 0;
 			for (int i=0; i<num;i++)
 			{
@@ -34,7 +34,7 @@ public class LuckyPenguin extends MiniJava {
 			}
 			if(stop == num - 1)
 			{
-				write("You are the last penguin to play! You win all the fish on the board!");
+				System.out.println("You are the last penguin to play! You win all the fish on the board!");
 				for(int i=1;i<10;i++)
 				{
 					pingu[k] += fish[i];
@@ -45,11 +45,11 @@ public class LuckyPenguin extends MiniJava {
 			fir = dice();
 			sec = dice();
 			sum = fir + sec;
-			write(fir+" + "+sec+" = "+sum+" was rolled.");
+			System.out.println(fir+" + "+sec+" = "+sum+" was rolled.");
 			if (sum == 12)
 			{
 
-				write("King Penguin! You win all the fish on the board!");
+				System.out.println("King Penguin! You win all the fish on the board!");
 				for (int i=1;i<10;i++)
 				{
 					pingu[k] += fish[i];
@@ -58,7 +58,7 @@ public class LuckyPenguin extends MiniJava {
 			}
 			else if (sum == 2)
 			{
-				write("Lucky penguin! You win all fish on the board except F7!");
+				System.out.println("Lucky penguin! You win all fish on the board except F7!");
 				for (int i=1;i<10;i++)
 				{
 					if(i == 5) continue;
@@ -67,26 +67,26 @@ public class LuckyPenguin extends MiniJava {
 			}
 			else if (sum == 7)
 			{
-				write("Wedding! You give a fish and place it on F7.");
+				System.out.println("Wedding! You give a fish and place it on F7.");
 				fish[5]++;
 				pingu[k]--;
 			}
 			else if (fish[sum - 2] == 0)
 			{
-				write("You put a fish on F"+sum);
+				System.out.println("You put a fish on F"+sum);
 				pingu[k]--;
 				fish[sum - 2]++;
 			}
 			else
 			{
-				write("You take the fish from F"+sum);
+				System.out.println("You take the fish from F"+sum);
 				pingu[k]++;
 				fish[sum - 2]--;
 			}
-			write("You now have "+pingu[k]+" fish!");
+			System.out.println("You now have "+pingu[k]+" fish!");
 			if (pingu[k] == 0)
 			{
-				write("You have lost all fish, so you can no longer play!");
+				System.out.println("You have lost all fish, so you can no longer play!");
 				checkpingu[k] = 1;
 			}
 			else
@@ -105,13 +105,13 @@ public class LuckyPenguin extends MiniJava {
 			if (pingu[i] > WinningNum) {WinningNum = pingu[i]; }
 			else if(pingu[i] == WinningNum) {last = i;}
 		}
-        write("The winning penguins with "+WinningNum+" fish:");
+		System.out.println("The winning penguins with "+WinningNum+" fish:");
         for (int i=0; i<num ; i++)
 		{
 			if(pingu[i] == WinningNum)
 			{
-				if(i == last) {writeConsole("Penguin "+i);}
-				else {write("Penguin "+i);}
+				if(i == last) {System.out.print("Penguin "+i);}
+				else {System.out.println("Penguin "+i);}
 			}
 		}
 
