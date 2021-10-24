@@ -1,6 +1,6 @@
 package pgdp.luckypenguin;
-
-public class LuckyPenguin extends MiniJava {
+import static pgdp.luckypenguin.MiniJava.*;
+public class LuckyPenguin {
     public static void main(String[] args) {
         int num = readInt("Number of penguins:");
         while (num <= 1) {
