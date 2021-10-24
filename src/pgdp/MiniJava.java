@@ -1,4 +1,4 @@
-package pgdp.luckypenguin;
+package pgdp;
 
 import java.io.*;
 import java.util.Random;
