@@ -11,7 +11,7 @@ public class LuckyPenguin {
 		}
 		int per = readInt("Starting fish per penguin:");
 		while (per <= 0) {
-			per = readInt("Start fish should be >0:");
+			per = readInt("Starting fish should be >0:");
 		}
 		int pingu [] = new int [num];
 		for (int i=0;i<num;i++)
