@@ -25,6 +25,7 @@ public class LuckyPenguin {
         while (t == false) {
             if (checkpingu[k] == 1) {
                 k++;
+                if (k == num ) k=0;
                 continue;
             }
             int sum = 0;
