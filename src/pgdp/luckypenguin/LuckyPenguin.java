@@ -55,6 +55,7 @@ public class LuckyPenguin {
 				for (int i=1;i<10;i++)
 				{
 					pingu[k] += fish[i];
+					fish[i] = 0;
 				}
 
 			}
@@ -65,6 +66,7 @@ public class LuckyPenguin {
 				{
 					if(i == 5) continue;
 					pingu[k] += fish[i];
+					fish[i]=0;
 				}
 			}
 			else if (sum == 7)
@@ -106,7 +108,7 @@ public class LuckyPenguin {
 		for (int i=0; i < num; i++)
 		{
 			if (pingu[i] > WinningNum) {WinningNum = pingu[i]; }
-			else if(pingu[i] == WinningNum) {last = i;}
+	//		else if(pingu[i] == WinningNum) {last = i;}
 		}
 if(WinningNum == 1)		System.out.println("The winning penguins with "+WinningNum+" fish:");
 else {System.out.println("The winning penguins with "+WinningNum+" fishes:");}
@@ -114,8 +116,8 @@ else {System.out.println("The winning penguins with "+WinningNum+" fishes:");}
 		{
 			if(pingu[i] == WinningNum)
 			{
-				if(i == last) {System.out.print("Penguin "+i);}
-				else {System.out.println("Penguin "+i);}
+				//if(i == last) {System.out.print("Penguin "+i);}
+			/*	else */{System.out.println("Penguin "+i);}
 			}
 		}
 
