@@ -40,7 +40,7 @@ public class LuckyPenguin {
                     pingu[k] += fish[i];
                 }
                 t = true;
-                continue;
+                break;
             }
             fir = dice();
             sec = dice();
