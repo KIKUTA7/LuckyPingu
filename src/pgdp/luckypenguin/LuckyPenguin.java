@@ -81,7 +81,7 @@ public class LuckyPenguin {
 			}
 			else
 			{
-				System.out.println("You take the fish from F"+sum+".");
+				System.out.println("They take the fish from F"+sum+".");
 				pingu[k]++;
 				fish[sum - 2]--;
 			}
