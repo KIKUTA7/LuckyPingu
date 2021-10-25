@@ -108,7 +108,8 @@ public class LuckyPenguin {
 			if (pingu[i] > WinningNum) {WinningNum = pingu[i]; }
 			else if(pingu[i] == WinningNum) {last = i;}
 		}
-		System.out.println("The winning penguins with "+WinningNum+" fish:");
+if(WinningNum == 1)		System.out.println("The winning penguins with "+WinningNum+" fish:");
+else {System.out.println("The winning penguins with "+WinningNum+" fishes:");}
 		for (int i=0; i<num ; i++)
 		{
 			if(pingu[i] == WinningNum)
