@@ -75,13 +75,13 @@ public class LuckyPenguin {
 			}
 			else if (fish[sum - 2] == 0)
 			{
-				System.out.println("You put a fish on F"+sum);
+				System.out.println("You put a fish on F"+sum+".");
 				pingu[k]--;
 				fish[sum - 2]++;
 			}
 			else
 			{
-				System.out.println("You take the fish from F"+sum);
+				System.out.println("You take the fish from F"+sum+".");
 				pingu[k]++;
 				fish[sum - 2]--;
 			}
