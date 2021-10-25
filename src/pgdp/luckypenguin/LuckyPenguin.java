@@ -28,7 +28,7 @@ public class LuckyPenguin {
 			if (checkpingu[k] == 1) {k++;continue;}
 			int sum = 0;
 			writeBoard(fish[1],fish[2],fish[3],fish[4],fish[5],fish[6],fish[7],fish[8],fish[9]);
-			System.out.println("It's penguin "+k+"'s turn:");
+			System.out.println("It's penguin "+k+" turn:");
 			int stop = 0;
 			for (int i=0; i<num;i++)
 			{
