@@ -85,7 +85,8 @@ public class LuckyPenguin {
 				pingu[k]++;
 				fish[sum - 2]--;
 			}
-			System.out.println("You now have "+pingu[k]+" fishes!");
+			if(pingu[k]>1)			System.out.println("You now have "+pingu[k]+" fishes!");
+			else System.out.println("You now have "+pingu[k]+" fish!");
 			if (pingu[k] == 0)
 			{
 				System.out.println("You have lost all fish, so you can no longer play!");
